@@ -63,7 +63,7 @@
 								"formatSettings": {
 									"type": "DelimitedTextWriteSettings",
 									"quoteAllText": true,
-									"fileExtension": ""
+									"fileExtension": "tsv"
 								}
 							},
 							"enableStaging": false,
