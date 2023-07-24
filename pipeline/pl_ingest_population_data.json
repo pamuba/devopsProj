@@ -104,7 +104,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": "http://asdf.com",
-					"method": "POST"
+					"method": "POST",
+					"body": "No File Found"
 				}
 			}
 		],
