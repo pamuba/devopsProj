@@ -119,7 +119,7 @@
 							{
 								"activity": "Get File Metadata",
 								"dependencyConditions": [
-									"Skipped"
+									"Succeeded"
 								]
 							}
 						],
