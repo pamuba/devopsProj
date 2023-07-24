@@ -122,7 +122,7 @@
 						"type": "Copy",
 						"dependsOn": [
 							{
-								"activity": "Check If File Exists",
+								"activity": "If Column Count Matches",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -230,7 +230,14 @@
 					{
 						"name": "Get File Metadata",
 						"type": "GetMetadata",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Check If File Exists",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.00:01:00",
 							"retry": 0,
@@ -257,6 +264,25 @@
 							},
 							"formatSettings": {
 								"type": "DelimitedTextReadSettings"
+							}
+						}
+					},
+					{
+						"name": "If Column Count Matches",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "Get File Metadata",
+								"dependencyConditions": [
+									"Skipped"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('Get File Metadata').output.columnCount,13)",
+								"type": "Expression"
 							}
 						}
 					}
