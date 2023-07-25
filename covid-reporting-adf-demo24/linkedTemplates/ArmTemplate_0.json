@@ -148,7 +148,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "files/cases_deaths.csv"
+						"relativeUrl": "/pamuba/files/blob/main/cases_deaths.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
