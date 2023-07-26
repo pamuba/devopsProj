@@ -68,6 +68,36 @@
 									"type": "Expression"
 								}
 							}
+						},
+						{
+							"name": "Execute Pipeline1",
+							"type": "ExecutePipeline",
+							"dependsOn": [
+								{
+									"activity": "Set variable1",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "pl_ingest_ecdc_data",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true,
+								"parameters": {
+									"sourceRelativeURL": {
+										"value": "@item().sourceRelativeURL",
+										"type": "Expression"
+									},
+									"sinkFileName": {
+										"value": "@item().sinkFileName",
+										"type": "Expression"
+									}
+								}
+							}
 						}
 					]
 				}
