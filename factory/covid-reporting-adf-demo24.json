@@ -1,9 +1,9 @@
 {
 	"name": "covid-reporting-adf-demo24",
-	"location": "southindia",
+	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
-		"principalId": "94995cf9-8535-42ce-9c2f-f97038d3176d",
+		"principalId": "3a21c8fd-3f4a-4108-b08e-f406d842d788",
 		"tenantId": "5ed016a0-eb35-4b61-95f8-a22df8d98711"
 	}
 }
