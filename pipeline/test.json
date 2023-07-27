@@ -103,7 +103,8 @@
 					"dataset": {
 						"referenceName": "bs_ecdc_file_list",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
