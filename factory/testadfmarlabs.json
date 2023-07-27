@@ -1,0 +1,9 @@
+{
+	"name": "testadfmarlabs",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d8bbb427-ae8f-493a-adf4-4f42ec4b7917",
+		"tenantId": "5ed016a0-eb35-4b61-95f8-a22df8d98711"
+	}
+}
